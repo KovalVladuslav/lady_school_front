@@ -1,0 +1,12 @@
+{
+  "/_app": "pages/_app.js",
+  "/auth/log-in": "pages/auth/log-in.html",
+  "/auth/registration": "pages/auth/registration.html",
+  "/course": "pages/course.html",
+  "/course/psychology/building-personal-relationships": "pages/course/psychology/building-personal-relationships.html",
+  "/course/psychology": "pages/course/psychology.html",
+  "/": "pages/index.html",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}

@@ -1,0 +1,76 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-a54b4f32bdc1ef890ddd.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/W2BCvVtlru0UZPwd50Nsd/_buildManifest.js",
+    "static/W2BCvVtlru0UZPwd50Nsd/_ssgManifest.js"
+  ],
+  "pages": {
+    "/": [
+      "static/chunks/webpack-61095c13c5984b221292.js",
+      "static/chunks/framework-2191d16384373197bc0a.js",
+      "static/chunks/main-c034215587cd157b2989.js",
+      "static/chunks/681-5ab509b96b5f794dfdd7.js",
+      "static/chunks/101-e32c056fcfd3f0ccb063.js",
+      "static/css/279fa0ee041b387b2212.css",
+      "static/chunks/pages/index-9c64f38d317c6a05e583.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-61095c13c5984b221292.js",
+      "static/chunks/framework-2191d16384373197bc0a.js",
+      "static/chunks/main-c034215587cd157b2989.js",
+      "static/css/1d342a423c8e305b9142.css",
+      "static/chunks/pages/_app-42d123ac8fdb77235af3.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-61095c13c5984b221292.js",
+      "static/chunks/framework-2191d16384373197bc0a.js",
+      "static/chunks/main-c034215587cd157b2989.js",
+      "static/chunks/pages/_error-a0e21b9b223f827fe1f2.js"
+    ],
+    "/auth/log-in": [
+      "static/chunks/webpack-61095c13c5984b221292.js",
+      "static/chunks/framework-2191d16384373197bc0a.js",
+      "static/chunks/main-c034215587cd157b2989.js",
+      "static/css/02e0098279eb6808605a.css",
+      "static/chunks/pages/auth/log-in-0cc00dfb8cd9c0d46066.js"
+    ],
+    "/auth/registration": [
+      "static/chunks/webpack-61095c13c5984b221292.js",
+      "static/chunks/framework-2191d16384373197bc0a.js",
+      "static/chunks/main-c034215587cd157b2989.js",
+      "static/chunks/681-5ab509b96b5f794dfdd7.js",
+      "static/chunks/101-e32c056fcfd3f0ccb063.js",
+      "static/css/0c0504e1e8db2a265e3f.css",
+      "static/chunks/pages/auth/registration-835898a10a68a3a62835.js"
+    ],
+    "/course": [
+      "static/chunks/webpack-61095c13c5984b221292.js",
+      "static/chunks/framework-2191d16384373197bc0a.js",
+      "static/chunks/main-c034215587cd157b2989.js",
+      "static/chunks/101-e32c056fcfd3f0ccb063.js",
+      "static/css/b57d5eef8f656dd2b230.css",
+      "static/chunks/pages/course-38c9284861e6c7ced227.js"
+    ],
+    "/course/psychology": [
+      "static/chunks/webpack-61095c13c5984b221292.js",
+      "static/chunks/framework-2191d16384373197bc0a.js",
+      "static/chunks/main-c034215587cd157b2989.js",
+      "static/chunks/101-e32c056fcfd3f0ccb063.js",
+      "static/css/b57d5eef8f656dd2b230.css",
+      "static/chunks/pages/course/psychology-7e91a8d2f5e09f8f447a.js"
+    ],
+    "/course/psychology/building-personal-relationships": [
+      "static/chunks/webpack-61095c13c5984b221292.js",
+      "static/chunks/framework-2191d16384373197bc0a.js",
+      "static/chunks/main-c034215587cd157b2989.js",
+      "static/chunks/101-e32c056fcfd3f0ccb063.js",
+      "static/css/f296659dc0ed63d19743.css",
+      "static/chunks/pages/course/psychology/building-personal-relationships-2e57378e9e08e7a5f057.js"
+    ]
+  },
+  "ampFirstPages": []
+}
