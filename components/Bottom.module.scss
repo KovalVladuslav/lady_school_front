@@ -1,0 +1,103 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.bottomWrapper {
+  background-color: $description-color;
+  padding: 30px 40px 15px;
+  text-align: center;
+
+  h3,
+  p {
+    color: $white;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+  }
+  p {
+    max-width: 285px;
+    margin: 0 auto 15px;
+  }
+  a {
+    color: $elements-color;
+    font-size: 19px;
+    text-decoration: none;
+    display: block;
+    transition: ease 0.4s;
+
+    &:hover {
+      color: $buttons-bg-hover;
+    }
+  }
+  ul {
+    margin-bottom: 45px;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 1.2px;
+      left: 64px;
+      content: '';
+      display: block;
+      height: 20px;
+      width: 1.5px;
+      background-color: $elements-color;
+    }
+    &::after {
+      position: absolute;
+      top: 1.2px;
+      right: 71px;
+      content: '';
+      display: block;
+      height: 20px;
+      width: 1.5px;
+      background-color: $elements-color;
+    }
+
+    li > a {
+      font-size: 15px;
+      color: $elements-color;
+      transition: ease 0.4s;
+      &:hover {
+        color: $buttons-bg-hover;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 48px 40px 64px;
+
+    h3,
+    p {
+      font-size: 28px;
+      line-height: 32px;
+      margin-bottom: 24px;
+    }
+    p {
+      max-width: 420px;
+    }
+    a {
+      font-size: 22px;
+    }
+    ul {
+      margin-bottom: 64px;
+      li > a {
+        font-size: 20px;
+      }
+      &::before {
+        top: 4.5px;
+        left: 81px;
+      }
+      &::after {
+        top: 4.5px;
+        right: 91px;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.descriptionMobile {
+  font-style: italic;
+  max-width: 285px;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+.descriptionDesktop {
+  font-style: italic;
+  word-wrap: break-word;
+  display: none;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    display: inline-block;
+  }
+}
+.descriptionBottom {
+  max-width: 840px;
+  margin: 0 auto;
+  text-align: center;
+}

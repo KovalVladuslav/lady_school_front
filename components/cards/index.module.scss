@@ -1,0 +1,59 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapperCard {
+  border: 0.8px solid #F2F2F2;
+  box-sizing: border-box;
+  box-shadow: -7px 7px 75px -35px #655146;
+  padding: 30px 15px;
+  margin-bottom: 15px;
+  background-color: $white;
+  position: relative;
+  z-index: 1;
+
+  @include media-breakpoint-up(md) {
+    padding: 48px 80px 64px;
+    margin-bottom: 24px;
+  }
+}
+
+.videoPlayer {
+  padding: 15px 15px 45px 15px;
+  border: 0.8px solid #F2F2F2;
+  box-shadow: -4px 6px 40px -22px rgba(101, 81, 70, 0.7);
+  height: 215px;
+  width: 315px;
+  margin: 0 auto;
+  & > div {
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  @include media-breakpoint-up(md) {
+    padding: 25px 25px 75px 25px;
+    height: 330px;
+    width: 470px;
+  }
+}
+
+.aboutCourseText {
+  text-align: center;
+  max-width: 840px;
+  margin: 0 auto 30px;
+}
+
+.missionCardItem {
+  @include media-breakpoint-up(md) {
+    max-width: 420px;
+  }
+}
+.resultCardItem {
+  p {
+    letter-spacing: 0.05em;
+  }
+  @include media-breakpoint-up(md) {
+    max-width: 840px;
+  }
+}

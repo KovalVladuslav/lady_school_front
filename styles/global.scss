@@ -1,0 +1,31 @@
+@import "~bootstrap/scss/bootstrap";
+@import "variables";
+@import "mixins";
+@import "remoldStyles";
+
+body {
+  font-family: 'Times New Roman', serif;
+
+  p {
+    font-size: 19px;
+    margin: 0;
+    color: $description-color;
+
+    @include media-breakpoint-up(md) {
+      font-size: 22px;
+    }
+  }
+
+  h2 {
+    color: $title-color;
+    font-size: 27px;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      font-size: 38px;
+      margin-bottom: 24px;
+    }
+  }
+}

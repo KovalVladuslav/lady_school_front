@@ -1,0 +1,96 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.customContentModal {
+  background: #FFFFFF;
+  border: 0.8px solid #F2F2F2;
+  box-sizing: border-box;
+  box-shadow: -7px 7px 75px -35px #655146;
+  margin: 0 auto;
+  border: unset;
+  border-radius: unset;
+
+  h3 {
+    font-size: 19px;
+    color: $title-color;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  @include media-breakpoint-up(md) {
+    h3 {
+      font-size: 33px;
+      line-height: 38px;
+      letter-spacing: 0.05em;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.modalStart {
+  width: 325px;
+  padding: 48px 32px;
+
+  @include media-breakpoint-up(md) {
+    width: 434px;
+    padding: 56px;
+  }
+}
+
+.modalConfirmEmail {
+  width: 300px;
+  padding: 15px;
+  @include media-breakpoint-up(md) {
+    width: 724px;
+    padding: 32px;
+  }
+}
+.modalConfirmEmailButtons {
+  display: flex;
+  gap: 15px;
+}
+.modalConfirmEmailEditBtn,
+.modalConfirmEmailSuccessBtn {
+  height: 47px;
+  line-height: 47px;
+  font-size: 19px;
+  font-weight: normal;
+  padding: 0;
+
+  @include media-breakpoint-up(md) {
+    font-size: 25px;
+    height: 61px;
+    line-height: 61px;
+  }
+}
+.modalConfirmEmailEditBtn {
+  width: 141px;
+  @include media-breakpoint-up(md) {
+    width: 322px;
+  }
+}
+.modalConfirmEmailSuccessBtn {
+  width: 111px;
+  @include media-breakpoint-up(md) {
+    width: 322px;
+  }
+}
+.email {
+  font-size: 19px;
+  color: $description-color;
+  text-align: center;
+  margin-bottom: 15px;
+  @include media-breakpoint-up(md) {
+    font-size: 22px;
+    letter-spacing: 0.05em;
+    margin-bottom: 48px;
+  }
+}
+
+.additionalBrownButtonLink {
+  width: 100%;
+  margin-bottom: 12px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 16px;
+  }
+}

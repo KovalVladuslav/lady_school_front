@@ -1,0 +1,15 @@
+.hamburger-react div {
+  height: 1px !important;
+}
+
+.mainContainer {
+  max-width: 1140px;
+}
+.modal-dialog {
+  max-width: unset;
+}
+
+.modal-backdrop {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+}

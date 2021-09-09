@@ -1,0 +1,125 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.colAuth {
+  padding: 60px 16px;
+
+  @include media-breakpoint-up(md) {
+    padding: 40px 0;
+  }
+}
+.wrapperAuth {
+  border: 0.8px solid $border-color;
+  box-sizing: border-box;
+  box-shadow: -7px 7px 75px -35px #655146;
+  padding: 45px 15px 30px;
+  max-width: 724px;
+  margin: 0 auto;
+
+  h1 {
+    color: $title-color;
+    font-size: 27px;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 48px 98px 32px;
+
+    h1 {
+      font-size: 33px;
+      line-height: 38px;
+      margin-bottom: 64px;
+    }
+  }
+}
+
+.forgotPassword {
+  color: $buttons-bg-color;
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto 30px;
+  cursor: pointer;
+  display: block;
+  transition: ease-in-out 0.2s;
+
+  &:hover {
+    color: $buttons-bg-hover;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+    margin: 64px auto 71px;
+  }
+}
+
+//registration
+.registrationPrice {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  color: $title-color;
+  margin-bottom: 48px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+  }
+}
+.accessMsg {
+  color: $description-color;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 16px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+  }
+}
+.agreePrivacyPolicy {
+  display: flex;
+  align-items: center;
+  margin: 54px 0 20px;
+  padding: 0 15px;
+
+  button {
+    background-color: transparent;
+    border: 1px solid $buttons-bg-color;
+    outline: none;
+    margin-right: 10px;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  p {
+    color: $description-color;
+    font-size: 12px;
+    a {
+      color: $buttons-bg-color;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    margin: 48px 0;
+    padding: 0;
+    button {
+      width: 28px;
+      height: 28px;
+      margin-right: 16px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}

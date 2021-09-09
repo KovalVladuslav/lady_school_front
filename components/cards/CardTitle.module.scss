@@ -1,0 +1,142 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapperCardTitle {
+  padding: 20px;
+  position: relative;
+  border: 0.8px solid #F2F2F2;
+  box-sizing: border-box;
+  box-shadow: -7px 7px 75px -35px #655146;
+  margin-bottom: 15px;
+  background-color: $white;
+  z-index: 1;
+
+  h1 {
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 28px;
+    line-height: 35px;
+    color: $title-color;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: animationMainTitle 2.5s ease forwards;
+
+    span {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      border: 1px solid $title-color;
+      display: inline-block;
+      margin: 0 8px 0 2px;
+    }
+  }
+  h2 {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 5px;
+    color: $title-color;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+    opacity: 0;
+    animation: animationMainTitle 2s ease forwards;
+    animation-delay: 0.5s;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 48px;
+    margin-bottom: 24px;
+    h1 {
+      font-size: 49px;
+      margin-top: 165px;
+      line-height: 61px;
+      letter-spacing: 4.5px;
+
+      span {
+        margin: 0 12px 0 4px;
+        width: 5px;
+        height: 5px;
+      }
+    }
+    h2 {
+      font-size: 15px;
+      margin-bottom: 45px;
+      letter-spacing: 11px;
+    }
+  }
+}
+
+@keyframes animationMainTitle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.buttonStartCourse {
+  color: $buttons-bg-color;
+  margin: 0 auto 25px;
+  display: block;
+  transition: ease 0.4s;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  animation: animationMainTitle 2s ease forwards;
+  animation-delay: 1s;
+  opacity: 0;
+  &:hover {
+    color: $title-color;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+    margin-bottom: 115px;
+  }
+}
+
+.wrapperCardTitle::before {
+  content: '';
+  display: block;
+  border-left: 1px solid $elements-color;
+  border-top: 1px solid $elements-color;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  @include media-breakpoint-up(md) {
+    border-width: 2px;
+    width: 29px;
+    height: 29px;
+    top: 48px;
+    left: 48px;
+  }
+}
+
+.wrapperCardTitle::after {
+  content: '';
+  display: block;
+  border-right: 1px solid $elements-color;
+  border-bottom: 1px solid $elements-color;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  @include media-breakpoint-up(md) {
+    border-width: 2px;
+    width: 29px;
+    height: 29px;
+    bottom: 48px;
+    right: 48px;
+  }
+}
