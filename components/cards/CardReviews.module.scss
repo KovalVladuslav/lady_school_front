@@ -1,0 +1,76 @@
+@import "styles/variables";
+@import "styles/mixins";
+
+.wrapperReviews {
+  padding: 15px 0;
+  max-width: 600px;
+  margin: 0 auto;
+  @include media-breakpoint-up(md) {
+    padding: 24px 0 40px;
+  }
+}
+
+.commentContainer {
+  margin-bottom: 15px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 24px;
+  }
+}
+.name {
+  color: $title-color;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  margin-bottom: 5px;
+  @include media-breakpoint-up(md) {
+    font-size: 25px;
+    margin-bottom: 7px;
+  }
+}
+.comment {
+  margin-bottom: 15px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 30px;
+  }
+}
+.commentBottomSide {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 1.5px;
+    width: 100px;
+    background-color: $elements-color;
+
+  }
+
+  span {
+    color: $elements-color;
+    font-size: 15px;
+    @include media-breakpoint-up(md) {
+      font-size: 20px;
+    }
+  }
+}
+
+.moreViewsBtn {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: $buttons-bg-color;
+  letter-spacing: 0.05em;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin: 0 auto;
+  display: block;
+  padding: 0;
+  @include media-breakpoint-up(md) {
+    font-size: 25px;
+  }
+}

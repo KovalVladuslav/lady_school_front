@@ -1,5 +1,5 @@
-@import "styles/variables";
-@import "styles/mixins";
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .wrapperLesson {
   padding-top: 14px;
@@ -31,9 +31,13 @@
 
 .cardLessonHeader {
   margin-bottom: 20px;
+  text-align: center;
+
+  p {
+    margin-bottom: 0 !important;
+  }
 
   @include media-breakpoint-up(md) {
-    text-align: center;
     margin-bottom: 47px;
   }
 }
@@ -84,6 +88,9 @@
 }
 
 .cardLessonDescription {
+  @include media-breakpoint-up(md) {
+    text-align: center;
+  }
 }
 
 .cardLessonBtnWatch {

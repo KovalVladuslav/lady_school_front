@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -11,6 +11,7 @@ import CardPrice from '@components/cards/CardPrice';
 import CardHowStart from '@components/cards/CardHowStart';
 import CardNeedLearn from '@components/cards/CardNeedLearn';
 import Bottom from "@components/Bottom";
+import CardReviews from "@components/cards/CardReviews";
 
 const IndexPage = () => {
     return (
@@ -25,6 +26,7 @@ const IndexPage = () => {
                             <CardProgramCourse/>
                             <CardResult/>
                             <CardPrice/>
+                            <CardReviews/>
                             <CardHowStart/>
                             <CardNeedLearn/>
                         </Col>

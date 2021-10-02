@@ -6,22 +6,41 @@ import Col from "react-bootstrap/Col";
 import {ChevronRightLightBrown} from '@components/Icon';
 import styles from '../index.module.scss';
 
-const lessons = [
-    { title: 'Построение личных отношений', link: '/course/psychology/building-personal-relationships' },
-    { title: 'Название урока', link: '/course/psychology/building-personal-relationships' },
-    { title: 'Название урока', link: '/course/psychology/building-personal-relationships' },
-];
+export async function getServerSideProps(context) {
 
-const PsychologyCoursePage = () => {
+    const { slug } = context.params;
+
+    const resAllCourse = await fetch(`https://ds.ladyschool.online/api/subjects/`);
+    const dataAllCourse = await resAllCourse.json();
+
+    const currentCourse = dataAllCourse.find(item => item.slug === slug);
+
+    if(!currentCourse?.id) {
+        return {
+            notFound: true,
+        }
+    }
+
+    const resLessonsCourse = await fetch(`https://ds.ladyschool.online/api/subjects/${currentCourse.id}`);
+    const dataLessonsCourse = await resLessonsCourse.json();
+
+
+
+    return {
+        props: { data: dataLessonsCourse }
+    }
+}
+
+const CoursePage = ({ data }) => {
     return (
         <main>
             <Container className='px-0 mainContainer'>
                 <Row className='m-0'>
                     <Col xs='12' className='p-3 px-xl-0 py-xl-4'>
                         <div className={styles.wrapperLessonsList}>
-                            <h1>Психология</h1>
-                            {lessons.map(({title, link}, index) => (
-                                <Link href={link} key={`${title}-${index}`}>
+                            <h1>{data.title}</h1>
+                            {data.lessons.map(({title, slug}, index) => (
+                                <Link href={'/course/[slug]/[lesson]'} as={`/course/${data.slug}/${slug}`} key={`${title}-${index}`}>
                                     <div className={styles.lessonsCardContainer}>
                                         <h2>{title}</h2>
                                         <span className={styles.lessonCardChevron}>
@@ -38,4 +57,4 @@ const PsychologyCoursePage = () => {
     )
 };
 
-export default PsychologyCoursePage
+export default CoursePage

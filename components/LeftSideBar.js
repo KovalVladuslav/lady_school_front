@@ -13,7 +13,6 @@ const menuItems = [
     {name: 'Стоимость', id: 'priceCourse'},
     {name: 'Отзывы', id: 'reviewsCourse'},
     {name: 'Инструкция', id: 'instructionCourse'},
-    {name: 'Подарок', id: 'presentCourse'},
 ];
 
 const LeftSideBar = ({ handleShowModal }) => {
