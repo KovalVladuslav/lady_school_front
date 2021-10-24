@@ -18,7 +18,7 @@ const menuItems = [
 const LeftSideBar = ({ handleShowModal }) => {
     const [showSideBar, setShowSideBar] = useState(false);
 
-    const SideBarRef = useRef(null);
+    const SideBarRef = useRef(null);                                                                                                                                                                                                                            
 
     useEffect(() => {
         function handleClickOutside(event) {

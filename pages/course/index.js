@@ -17,7 +17,7 @@ export async function getServerSideProps(context) {
 }
 
 const AllCourses = ({ data }) => {
-    console.log(data);
+
     return (
         <main>
             <Container className='px-0 mainContainer'>

@@ -63,11 +63,12 @@
   padding: 15px 15px 47px;
   max-width: 315px;
   margin: 0 auto 30px;
+  overflow: hidden;
 
   @include media-breakpoint-up(md) {
     padding: 32px;
-    max-width: 514px;
-    height: 314px;
+    max-width: 680px;
+    height: 410px;
     margin-bottom: 47px;
   }
 }

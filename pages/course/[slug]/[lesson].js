@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactPlayer from 'react-player/lazy'
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -38,6 +39,7 @@ export async function getServerSideProps(context) {
 }
 
 const LessonPage = ({ data }) => {
+    const movieLink = data.videos[0]?.video_file;
 
     return (
         <main>
@@ -53,9 +55,20 @@ const LessonPage = ({ data }) => {
                                     </p>
                                 </div>
                                 <div className={styles.cardLessonVideoWrapper}>
-                                    <div className={styles.cardLessonVideo}>
-                                        <PlayIcon/>
-                                    </div>
+                                    <ReactPlayer
+                                        url={movieLink}
+                                        width='100%'
+                                        height='100%'
+                                        controls={true}
+                                        config={{ file: {
+                                                attributes: {
+                                                    controlsList: 'nodownload'
+                                                }
+                                            }}}
+                                    />
+                                    {/*<div className={styles.cardLessonVideo}>*/}
+                                    {/*    /!*<PlayIcon/>*!/*/}
+                                    {/*</div>*/}
                                 </div>
                                 <div className={styles.cardLessonDescription}>
                                     <h2>План урока</h2>
