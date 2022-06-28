@@ -1,1 +1,1 @@
-# lady_school_front
+https://lady-school-front.vercel.app/
